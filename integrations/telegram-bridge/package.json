@@ -1,0 +1,20 @@
+{
+  "name": "@deepseek-tui/telegram-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Telegram bot bridge for a local deepseek serve --http runtime.",
+  "main": "src/index.mjs",
+  "scripts": {
+    "start": "node src/index.mjs",
+    "check": "node --check src/index.mjs && node --check src/lib.mjs",
+    "test": "node --test test/*.test.mjs",
+    "validate:config": "node scripts/validate-config.mjs"
+  },
+  "dependencies": {
+    "telegraf": "^4.16.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
